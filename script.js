@@ -11,7 +11,7 @@ function sendReq() {
         search = document.getElementById('text').value,
         limit = 1,
         offset = 0,
-        url = `https://api.giphy.com/v1/gifs/search?api_key=1tqwMywkT5HjTrmdg8aF7mw5ZN2h0p2U&q=${search}=&${limit}=&${offset}=`;
+        url = `https://api.giphy.com/v1/gifs/search?api_key=1tqwMywkT5HjTrmdg8aF7mw5ZN2h0p2U&q=${search}=&limit=${limit}=&offset=${offset}`;
 
     xhr.open(method, url, true);
     xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
