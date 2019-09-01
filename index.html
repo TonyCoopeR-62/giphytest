@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://use.fontawesome.com/ea2e72134e.js"></script>
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="text" value="" placeholder="input some text" onkeyup="sendReq()"> 
-    <div id="output">
-        
-    </div>
-    <script src="script.js"></script> 
+    <h3 id="top">GIPHY API</h3>
+    <form id="form">
+        <input type="text" id="text" value="" placeholder="input some text"> 
+        <input type="button" id="button" value="Search" onclick="sendReq()">
+        <select id="select">
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="10">10</option>
+        </select>
+    </form>
+    <div id="output"></div>
+    <a href="#top"><i class="fas fa-angle-double-up"></i></a> 
 </body>
 </html>
