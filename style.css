@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    margin: auto;
+}
+
 #output {
     max-width: auto;
     height: auto;
@@ -23,6 +27,7 @@ html {
 #form {
     position: fixed;
     padding: 20px;
+    display: flex;
 }
 
 #text {
@@ -43,10 +48,26 @@ html {
 
 #select {
     border-radius: 8px;
+    outline: none;
+    width: 30px;
+    height: 30px;
 }
 
-#fa-angle-double-up {
-    background-color: black;
-    width: auto;
-    height: auto;
+#arrow {
+    width: 40px;
+    height: 40px;
+    color: #525252;
+    display: none;
+    margin: 20px;
+}
+
+#arrow:hover {
+    color: #bd5454;
+    transition: color 0.3s ease-out;
+}
+
+#searchIcon {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
 }

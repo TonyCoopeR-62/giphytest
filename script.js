@@ -1,6 +1,7 @@
 //     giphyApiKey = '1tqwMywkT5HjTrmdg8aF7mw5ZN2h0p2U';
 let result = [];
 
+
 function sendReq() {
     let xhr = new XMLHttpRequest(),  
         output = document.getElementById('output'),
@@ -24,6 +25,7 @@ function sendReq() {
             link.setAttribute("src", gifs);
             output.appendChild(link);    
     }
+    document.getElementById('arrow').style.display = 'inline';
 }
 
 

@@ -7,25 +7,28 @@
     <meta name="description" content="giphy api test project">
     <meta name="author" content="TonyCoopeR-62">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="icon" href="./icons/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/ea2e72134e.js"></script>
-    <script src="script.js"></script>
+    
     <title>Giphy API App</title>
 </head>
 <body>
-    <h3 id="top">GIPHY API</h3>
-    <form id="form">
-        <input type="text" id="text" value="" placeholder="input some text"> 
-        <input type="button" id="button" value="Search" onclick="sendReq()">
-        <select id="select">
-            <option value="3">3</option>
-            <option value="5">5</option>
-            <option value="7">7</option>
-            <option value="10">10</option>
-        </select>
-    </form>
-    <div id="output"></div>
-    <a href="#top"><i class="fas fa-angle-double-up"></i></a> 
+    <main>
+        <h3 id="top">GIPHY API</h3>
+        <form id="form">
+            <input type="text" id="text" value="" placeholder="input some text"> 
+            <a href="#" onclick="sendReq()"><img src="icons/search.png" id="searchIcon"></a>
+            <select id="select">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+            </select>
+        </form>
+        <div id="output"></div>
+        <a href="#top"><img src="icons/up.png" id="arrow"></a> 
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
