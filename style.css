@@ -33,7 +33,7 @@ html {
     color: gray;
     padding: 3px;
     border-radius: 8px;
-
+    outline: none;
 }
 
 #button {

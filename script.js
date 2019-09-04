@@ -1,5 +1,4 @@
 //     giphyApiKey = '1tqwMywkT5HjTrmdg8aF7mw5ZN2h0p2U';
-//     var url = "https://api.giphy.com/v1/gifs/search?api_key=1tqwMywkT5HjTrmdg8aF7mw5ZN2h0p2U&q=cs&limit=10&offset=0";
 let result = [];
 
 function sendReq() {
@@ -18,12 +17,12 @@ function sendReq() {
                 };
             };
         xhr.send();
-    for ( let i = 0; i < result.data.length; i++) {
-        let link = document.createElement("img");
-        let gifs = result.data[i]['images']['downsized']['url'];
-        link.setAttribute("id", "gifs");
-        link.setAttribute("src", gifs);
-        output.appendChild(link);    
+        for ( let i = 0; i < result.data.length; i++) {
+            let link = document.createElement("img");
+            let gifs = result.data[i]['images']['downsized']['url'];
+            link.setAttribute("id", "gifs");
+            link.setAttribute("src", gifs);
+            output.appendChild(link);    
     }
 }
 
