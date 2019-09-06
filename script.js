@@ -1,6 +1,8 @@
 //     giphyApiKey = '1tqwMywkT5HjTrmdg8aF7mw5ZN2h0p2U';
-let result = [];
 
+let result = [];
+let visible = document.getElementById('output');
+let arrow = document.getElementById('arrow');
 
 function sendReq() {
     let xhr = new XMLHttpRequest(),  
@@ -17,15 +19,16 @@ function sendReq() {
                     result = JSON.parse(xhr.responseText);        
                 };
             };
-        xhr.send();
+        xhr.send();   
         for ( let i = 0; i < result.data.length; i++) {
             let link = document.createElement("img");
             let gifs = result.data[i]['images']['downsized']['url'];
             link.setAttribute("id", "gifs");
             link.setAttribute("src", gifs);
-            output.appendChild(link);    
-    }
-    document.getElementById('arrow').style.display = 'inline';
+            output.appendChild(link);   
+        }
+        arrow.style.display = 'block';
+        visible.style.display = 'block';
 }
 
 

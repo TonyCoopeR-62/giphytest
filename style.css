@@ -4,16 +4,29 @@ html {
 
 main {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#top {
+    background: #52525246;
+    border-radius: 8px;
+    padding: 3px;
+    margin: 0;
+    display: block;
 }
 
 #output {
-    max-width: auto;
+    max-width: 660px;
+    position: block;
     height: auto;
     border: 1px solid black;
     border-radius: 10px;
     background: linear-gradient(pink, lightblue);
     margin-top: 30px;
     padding-top: 30px;
+    display: none;
+    transition: display 0.3s ease-out;
 }
 
 #gifs {
@@ -27,7 +40,9 @@ main {
 #form {
     position: fixed;
     padding: 20px;
+
     display: flex;
+    justify-content: space-between;
 }
 
 #text {
@@ -39,18 +54,15 @@ main {
     padding: 3px;
     border-radius: 8px;
     outline: none;
-}
-
-#button {
-    border-radius: 8px;
-    background: rgb(161, 144, 238);
+    margin-left: 4px;
 }
 
 #select {
     border-radius: 8px;
     outline: none;
-    width: 30px;
+    width: 40px;
     height: 30px;
+    margin-left: 5px;
 }
 
 #arrow {
@@ -70,4 +82,5 @@ main {
     width: 25px;
     height: 25px;
     margin-left: 5px;
+    margin-top: 5px;
 }
