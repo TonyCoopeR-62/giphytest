@@ -27,7 +27,7 @@ function sendReq() {
             link.setAttribute("src", gifs);
             output.appendChild(link);   
         }
-        arrow.style.display = 'block';
+        arrow.style.display = 'inline';
         visible.style.display = 'block';
 }
 
