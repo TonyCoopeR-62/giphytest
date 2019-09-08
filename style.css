@@ -2,9 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     display: flex;
     justify-content: center;
+    color: #9700dde8;
+    font-family: 'Ink Free', sans-serif;
 }
 #top {
     background: linear-gradient(15deg, #7167ff25, rgba(194, 0, 42, 0.123));
@@ -17,24 +23,20 @@ main {
 }
 
 #output {
-    max-width: 660px;
-    position: block;
+    width: 800px;
     height: auto;
-    border-radius: 10px;
-    background: linear-gradient(rgba(255, 192, 203, 0.329), rgba(173, 216, 230, 0.356));
-    margin-top: 100px;
-    padding-top: 30px;
-    display: none;
-    transition: display 0.3s ease-out;
-    box-shadow: 10px 10px 30px #66666669;
+    background: linear-gradient(rgba(231, 93, 201, 0.705), #ddd);
+    border-radius: 8px;
 }
 
 #gifs {
-    width: 180px;
-    height: 130px;
+    width: 160px;
+    height: 120px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px;
     margin: 20px;
+    transform: scaleX('10deg');
+    transition: 0.5s;
 }
 
 #form {
@@ -45,7 +47,7 @@ main {
     justify-content: space-between;
     min-width: 430px;
     border-radius: 8px;
-    background: linear-gradient(45deg, rgba(235, 12, 105, 0.089), rgba(243, 5, 223, 0.103));
+    background: linear-gradient(45deg, rgba(255, 194, 219, 0.904), rgba(236, 115, 226, 0.87));
 }
 
 #text {
@@ -53,7 +55,7 @@ main {
     height: 25px;
     font-weight: bold;
     font-size: 18px;
-    color: gray;
+
     padding: 3px;
     border: none;
     border-radius: 8px;
@@ -78,13 +80,8 @@ main {
     width: 40px;
     height: 40px;
     color: #525252;
-    display: none;
     margin: 20px;
-}
-
-#arrow:hover {
-    color: #bd5454;
-    transition: color 0.3s ease-out;
+    display: inherit;
 }
 
 #searchIcon {
