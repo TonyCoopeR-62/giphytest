@@ -77,11 +77,10 @@ main {
 }
 
 #arrow {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     color: #525252;
-    margin: 20px;
-    display: inherit;
+    margin: 5px;
 }
 
 #searchIcon {
