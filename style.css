@@ -27,6 +27,7 @@ main {
     height: auto;
     background: linear-gradient(rgba(231, 93, 201, 0.705), #ddd);
     border-radius: 8px;
+    text-align: center;
 }
 
 #gifs {
